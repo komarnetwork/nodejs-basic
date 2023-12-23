@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "lint-fix": "eslint --fix --ext .js,.jsx .",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node ./nodejs-web-server/server.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint"
