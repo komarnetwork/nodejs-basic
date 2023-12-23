@@ -4,7 +4,7 @@ class Wolf {
   }
 
   howl() {
-    console.log("owooooo!");
+    console.log('owooooo!');
   }
 }
 

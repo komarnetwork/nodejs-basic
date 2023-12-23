@@ -1,9 +1,8 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
 
 const fileReadCallback = (error, data) => {
   if (error) {
-    console.log("Gagal Membaca File");
+    console.log('Gagal Membaca File');
     return;
   }
 
@@ -11,7 +10,7 @@ const fileReadCallback = (error, data) => {
 };
 
 fs.readFile(
-  "/Users/mymac/Documents/root/learn-javascript/nodejs-basic/filesystem/notes.txt",
-  "UTF-8",
-  fileReadCallback
+  '/Users/mymac/Documents/root/learn-javascript/nodejs-basic/filesystem/notes.txt',
+  'UTF-8',
+  fileReadCallback,
 );

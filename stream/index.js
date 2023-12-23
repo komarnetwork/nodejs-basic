@@ -1,41 +1,44 @@
-const fs = require("fs");
+const fs = require('fs');
 
 const readableStream = fs.createReadStream(
-  "/Users/mymac/Documents/root/learn-javascript/nodejs-basic/stream/input.txt",
+  '/Users/mymac/Documents/root/learn-javascript/nodejs-basic/stream/input.txt',
   {
     highWaterMark: 15,
-  }
+  },
 );
 
-const writableStream = fs.createWriteStream('/Users/mymac/Documents/root/learn-javascript/nodejs-basic/stream/output.txt',
+const writableStream = fs.createWriteStream(
+  '/Users/mymac/Documents/root/learn-javascript/nodejs-basic/stream/output.txt',
   {
     highWaterMark: 15,
-  });
-readableStream.pipe(writableStream)
+  },
+);
+readableStream.pipe(writableStream);
 
-
-readableStream.on("readable", () => {
+readableStream.on('readable', () => {
   try {
+    /*global process:true*/
+    /*eslint no-undef: "error"*/
     process.stdout.write(`[${readableStream.read()}]`);
   } catch (error) {
     // catch the error when the chunk cannot be read.
-    console.log("Gagal membaca file");
+    console.log('Gagal membaca file');
   }
 });
 
-readableStream.on("end", () => {
-  console.log("Done");
+readableStream.on('end', () => {
+  console.log('Done');
 });
 
 writableStream.on('writetable', () => {
   try {
-    console.log("Berhasil menulis file");
+    console.log('Berhasil menulis file');
   } catch (error) {
-    console.log("Gagal menulis file");
+    console.log('Gagal menulis file');
   }
-})
+});
 
 writableStream.on('end', () => {
-  console.log("Done");
-})
+  console.log('Done');
+});
 // writableStream.write()

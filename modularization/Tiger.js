@@ -4,7 +4,7 @@ class Tiger {
   }
 
   growl() {
-    console.log("grrrrr!");
+    console.log('grrrrr!');
   }
 }
 

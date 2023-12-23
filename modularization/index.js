@@ -1,5 +1,5 @@
-const Tiger = require("./Tiger"); // TODO 3
-const Wolf = require("./Wolf"); // TODO 4
+const Tiger = require('./Tiger'); // TODO 3
+const Wolf = require('./Wolf'); // TODO 4
 
 const fighting = (tiger, wolf) => {
   if (tiger.strength > wolf.strength) {
@@ -12,7 +12,7 @@ const fighting = (tiger, wolf) => {
     return;
   }
 
-  console.log("Tiger and Wolf have same strength");
+  console.log('Tiger and Wolf have same strength');
 };
 
 const tiger = new Tiger();

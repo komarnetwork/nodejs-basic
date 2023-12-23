@@ -2,7 +2,7 @@
 // Untuk melakukannya, Anda perlu mengekspor nilai pada module tersebut.
 
 const coffee = {
-  name: "Tubruk",
+  name: 'Tubruk',
   price: 15000,
 };
 

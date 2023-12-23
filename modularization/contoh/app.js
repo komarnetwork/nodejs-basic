@@ -1,5 +1,5 @@
 // Setelah itu nilai coffee dapat digunakan pada berkas JavaScript lain dengan cara mengimpor nilainya melalui fungsi global require().
-const coffee = require("./coffe");
+const coffee = require('./coffe');
 
 console.log(coffee);
 
