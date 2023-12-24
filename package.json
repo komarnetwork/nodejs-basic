@@ -9,7 +9,7 @@
     "lint-fix": "eslint --fix --ext .js,.jsx .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "start": "node ./nodejs-web-server/server.js"
+    "start": "node ./nodejs-web-server/routingRequest.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint"
