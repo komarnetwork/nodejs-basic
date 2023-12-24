@@ -2,7 +2,10 @@
 const http = require('http');
 
 const requestListener = (request, response) => {
-  response.setHeader('Content-Type', 'text/html');
+  // response.setHeader('Content-Type', 'text/html');
+  response.setHeader('Content-Type', 'application/json');
+
+  response.setHeader('X-Powered-By', 'NodeJS'); // Untuk memberitahu client teknologi server apa yang kita gunakan
 
   // response.statusCode = 200;
   const { url, method } = request;
