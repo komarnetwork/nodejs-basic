@@ -49,7 +49,9 @@ const requestListener = (request, response) => {
     }
   } else {
     response.statusCode = 404;
-    response.end('<h1>Halaman tidak ditemukan!</h1>');
+    // response.end('<h1>Halaman tidak ditemukan!</h1>');
+    response.end(JSON.stringify({ message: 'Halaman tidak ditemukan!' })); // mengubah objek JavaScript menjadi JSON string menggunakan
+    // result : {"message":"Halaman tidak ditemukan!"}
   }
 };
 
