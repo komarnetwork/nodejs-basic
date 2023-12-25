@@ -27,5 +27,6 @@ module.exports = {
     semi: ['error', 'always'],
     camelcase: ['error'],
     'no-undef': ['error'],
+    'no-unused-vars': 'off',
   },
 };
